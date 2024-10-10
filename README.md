@@ -1,0 +1,1 @@
+# Construction-of-a-database-for-a-Thread-sensor-network-and-development-of-a-data-visualization-API
