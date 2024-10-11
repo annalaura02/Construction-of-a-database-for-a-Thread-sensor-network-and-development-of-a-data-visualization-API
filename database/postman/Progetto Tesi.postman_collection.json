@@ -1,0 +1,185 @@
+{
+	"info": {
+		"_postman_id": "8ee76fbc-9efc-46e8-8c1f-a44fe2781138",
+		"name": "Progetto Tesi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38393669"
+	},
+	"item": [
+		{
+			"name": "Create Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sensor_id\": 1,\r\n    \"temperature\": 23.4,\r\n    \"humidity\": 834,\r\n    \"pH\": 6.5,\r\n    \"ir\": 56.7,\r\n    \"vis\": 456,\r\n    \"battery\": 34\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/soil_data",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"soil_data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Connection",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/test_conn",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"test_conn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Start Sensor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5001/api/sensor/start",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"sensor",
+						"start"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Visualize Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/visualize?sensors=1&sensors=2&fields=temperature&fields=ir&date_start=2024-09-18T00:00:00&date_end=2024-09-18T11:00:00",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"visualize"
+					],
+					"query": [
+						{
+							"key": "sensors",
+							"value": "1"
+						},
+						{
+							"key": "sensors",
+							"value": "2"
+						},
+						{
+							"key": "fields",
+							"value": "temperature"
+						},
+						{
+							"key": "fields",
+							"value": "ir"
+						},
+						{
+							"key": "date_start",
+							"value": "2024-09-18T00:00:00"
+						},
+						{
+							"key": "date_end",
+							"value": "2024-09-18T11:00:00"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Last",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/get_last",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"get_last"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Plants",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Sensors",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Average",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
