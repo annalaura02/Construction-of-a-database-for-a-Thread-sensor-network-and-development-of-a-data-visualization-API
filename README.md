@@ -5,11 +5,14 @@ This repository contains the source code and documentation for the Sensor Networ
 **Project Overview**
 The system collects key environmental metrics such as:
 
-Soil temperature
-Humidity
-pH levels
+Soil temperature,
+Humidity,
+pH levels,
 Infrared and visible light radiation
-These metrics are collected using Thread-connected sensors and stored in a MySQL database. The data is accessed and visualized through a RESTful API, with an interactive PyQt6 GUI allowing users to monitor conditions in real time, generate graphs, and map optimal planting positions.
+
+These metrics are collected using Thread-connected sensors and stored in a MySQL database. 
+
+The data is accessed and visualized through a RESTful API, with an interactive PyQt6 GUI allowing users to monitor conditions in real time, generate graphs, and map optimal planting positions.
 
 **Features**
 
