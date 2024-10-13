@@ -12,6 +12,7 @@ Infrared and visible light radiation
 These metrics are collected using Thread-connected sensors and stored in a MySQL database. The data is accessed and visualized through a RESTful API, with an interactive PyQt6 GUI allowing users to monitor conditions in real time, generate graphs, and map optimal planting positions.
 
 **Features**
+
 Sensor Data Collection: Simulated sensor data generation using Python to replicate real-world agricultural conditions.
 
 Database Management: Efficient MySQL database design optimized for fast data storage and querying.
