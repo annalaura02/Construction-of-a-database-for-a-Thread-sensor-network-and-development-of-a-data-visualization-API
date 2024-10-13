@@ -8,7 +8,7 @@ The system collects key environmental metrics such as:
 Soil temperature,
 Humidity,
 pH levels,
-Infrared and visible light radiation
+Infrared and visible light radiation.
 
 These metrics are collected using Thread-connected sensors and stored in a MySQL database. 
 
