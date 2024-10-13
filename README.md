@@ -13,7 +13,11 @@ These metrics are collected using Thread-connected sensors and stored in a MySQL
 
 **Features**
 Sensor Data Collection: Simulated sensor data generation using Python to replicate real-world agricultural conditions.
+
 Database Management: Efficient MySQL database design optimized for fast data storage and querying.
+
 API: A RESTful API built with Flask for seamless communication between sensors, database, and front-end tools.
+
 Data Visualization: Interactive maps (Folium) and dynamic graphs (Matplotlib) to help users visualize environmental trends.
+
 Plant Positioning Algorithm: Calculates the optimal planting position based on environmental conditions.
